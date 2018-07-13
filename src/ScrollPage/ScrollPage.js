@@ -27,17 +27,18 @@ class ScrollPage extends Component {
     this.addWheelEvent();
     window.onresize = document.onresize = this.resize.bind(this);
     window.turnTo = document.turnTo = this.turnTo.bind(this);
-    window.curPage = this.state.curPage;
   }
 
   handle(delta) {
     if (delta < 0) {
       if (this.state.curPage < this.state.totalPage) {
         this.turnTo(this.state.curPage + 1);
+        window.curPage = this.state.curPage;
       }
     } else {
       if (this.state.curPage > 1) {
         this.turnTo(this.state.curPage - 1);
+        window.curPage = this.state.curPage;
       }
     }
   }
