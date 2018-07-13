@@ -41,6 +41,7 @@ var ScrollPage = function (_Component) {
       this.addWheelEvent();
       window.onresize = document.onresize = this.resize.bind(this);
       window.turnTo = document.turnTo = this.turnTo.bind(this);
+      window.curPage = this.state.curPage;
     }
   }, {
     key: 'handle',
