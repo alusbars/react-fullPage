@@ -48,10 +48,12 @@ var ScrollPage = function (_Component) {
       if (delta < 0) {
         if (this.state.curPage < this.state.totalPage) {
           this.turnTo(this.state.curPage + 1);
+          window.curPage = this.state.curPage;
         }
       } else {
         if (this.state.curPage > 1) {
           this.turnTo(this.state.curPage - 1);
+          window.curPage = this.state.curPage;
         }
       }
     }
