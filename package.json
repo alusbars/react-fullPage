@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Toxni/react-fullPage.git"
+    "url": "git+https://github.com/alusbars/react-fullPage.git"
   },
   "author": "toxni",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Toxni/react-fullPage/issues"
+    "url": "https://github.com/alusbars/react-fullPage/issues"
   },
   "homepage": "https://github.com/Toxni/react-fullPage#readme",
   "dependencies": {
