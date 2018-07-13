@@ -19,6 +19,7 @@ class ScrollPage extends Component {
       curPage: this.props.curPage,
       totalPage: this.props.totalPage,
     };
+    window.curPage = this.props.curPage;
     this.onPageChange = this.props.onPageChange;
   }
 
@@ -76,6 +77,7 @@ class ScrollPage extends Component {
 
   turnTo(num) {
     this.setState({ curPage: num });
+    window.curPage= num;
     const translatey = `translatey(-${window.innerHeight * (num - 1)}px)`;
     const length = document.getElementsByTagName('section').length;
     for (let i = 0; i < length; i++) {
